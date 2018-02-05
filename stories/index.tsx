@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { Button } from '../src/components/Button';
+import { Button } from '../src/components/button';
+
+import * as readme from "../src/components/button/readme.md";
+import { withReadme } from 'storybook-readme';
 
 storiesOf('Button', module)
-  .add('with text', () => (
-    <Button>Hello Button</Button>
-  ))
+  .add('Default', withReadme(['assada'], () => {
+    return <Button>boton</Button>;
+  }));
