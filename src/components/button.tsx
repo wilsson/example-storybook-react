@@ -4,6 +4,8 @@ import * as PropTypes from 'prop-types';
 
 interface Button {
     primary?: any;
+    alert?: any;
+    danger?: any;
 }
 
 /** Button component description */
@@ -14,8 +16,16 @@ const Button = styled.button`
     cursor: pointer;
     border-radius: 5px;
     ${(props: Button) => props.primary && css`
-        color: green;
-        border: 1px solid green;
+        color: white;
+        background-color: green;
+    `}
+    ${(props: Button) => props.alert && css`
+        color: white;
+        background-color: orange;
+    `}
+    ${(props: Button) => props.danger && css`
+        color: white;
+        background-color: red;
     `}
 `;
 
