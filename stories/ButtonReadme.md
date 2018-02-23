@@ -5,7 +5,7 @@ comment top
 <!-- STORY -->
 
 ```js
-class x extends Jp{
+class Example extends React.Component{
 
 }
 ```

@@ -8,14 +8,22 @@ import Button from './components/Button';
 
 <!-- STORY -->
 
+### Properties
+
+| propName | propType | defaultValue | isRequired |
+| -------- | -------- | ------------ | ---------- |
+| primary  | boolean  | false        | -          |
+| alert    | boolean  | false        | -          |
+| danger   | boolean  | false        | -          |
+
 ### More styles to button
 
-Use **alert** and **success** flags only in these cases:
+Use **alert**, **danger** and **danger** flags only in these cases:
 
 **primary** - change color green
 
 ```jsx
-<Button primary> Success </Button>
+<Button primary> Primary </Button>
 ```
 
 **alert** - change color orange
@@ -24,8 +32,8 @@ Use **alert** and **success** flags only in these cases:
 <Button alert> Alert </Button>
 ```
 
-**success** - change color green
+**danger** - change color red
 
 ```jsx
-<Button success> Success </Button>
+<Button danger> Danger </Button>
 ```
