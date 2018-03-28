@@ -1,6 +1,6 @@
 # Button
 
-Normal application button. 
+Normal application button :D. 
 
 ```js
 import Button from './components/Button';

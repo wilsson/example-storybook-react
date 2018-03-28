@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { withReadme, withDocs } from 'storybook-readme';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import styled from 'styled-components';
+import { withInfo } from '@storybook/addon-info';
 
-import { Button } from '../src/components/button';
+import { Button } from '../../src/components/button';
 
 //docs button
 import * as readme from "./ButtonReadme.md";

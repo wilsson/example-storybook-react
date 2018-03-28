@@ -7,8 +7,9 @@ setOptions({
   addonPanelInRight: true
 });
 
+const req = require.context('../stories/', true, /[$storie]+.\.tsx$/);
 function loadStories() {
-  require('../stories');
+  req.keys().forEach((filename) => req(filename))
 }
 
 configure(loadStories, module);
